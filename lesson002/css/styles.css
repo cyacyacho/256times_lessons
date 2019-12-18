@@ -1,0 +1,54 @@
+button{
+  background: #247CC0;
+  color: white;
+  height: 60px;
+  width: 150px;
+  font-size: 28px;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+}
+
+
+/*以下、レビュー観ながら修正*/
+
+button {
+  background: #247cc0;
+  color: white;
+  /*height: 60px;*/
+  line-height: 1.6em;
+  /*width: 150px;*/
+  display: inline-block;
+  padding: 0 16px;
+  font-size: 28px;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+/*文字数に応じてボタンの大きさが変わるので、widthを設定しない。*/
+/*display: inline-block;を追記・・・ボタンのテキストに応じた長さになる*/
+/*ボタンタグはもともとのスタイルがブラウザによって違うように表示されるため、スタイリングには適していない。そのため、ボタンはaタグかdivタグが一般的だが、裏技としてall: unset;としてあげればスタイリングがない状態からスタイリングし直すことが可能。しかし、使えないブラウザが多いので実務ではあまり使用されない。*/
+
+/*以下、再挑戦*/
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  padding: 0.25em 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.btn {
+  background: #247CC0;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translate3d(0, 3px, 0);
+}
